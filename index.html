@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!--La descripcion que puede aparecer en los resultados del navegador abajo del tittle-->
+    <meta name="description" content="La idea de negocio “Essentia” es una perfumería complementada
+    con una app que contiene un innovador software que utiliza la decisión del usuario para encontrar fragancias ideales">
+
+    
+    <meta charset="utf-8"> <!--Codificacion--> <!-- Para no tener problema com puntuacion y emojis-->
+    <meta name="viewport" content="width=device-width"> <!--Adaptacion a distintos tipos de pantalla-->
+    <title>Essentia Perfumeria</title> <!--Titulo que aparece en Internet-->
+
+    <meta name="robots" content="noindex, follow"> <!--Muestra esta pagina en resultados y si hay links pueden ser vistos-->
+    <meta name="theme-color" content="#FF0000"> <!--Colocar color en la parte de arriba del navegador-->
+
+    <link rel="icon" type="image/jpg" href="/Images/gatos tittle perfumeria.jpg"> <!--Coloca un icono al lado del tittle-->
+
+    <!--Fondo de la pagina-->
+    <style> 
+
+        body {
+            background: #2D6FE3;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+
+        <h1>Perfumeria 🤑</h1>
+
+        <!--Sirve para guiar al usuario al tema que desea en vez de bajar hasta el tema-->
+        <!--href = el destino del enlace, y lo de afuera es lo que aparece en la pagina-->
+        <nav>
+            <!--Los navs son mas que todo para la navegacion interna de la pagina-->
+            <a href="#catálogo">Catálogo de Perfumes</a>
+            <a href="#oferpromos">Ofertas y Promociones</a>
+            <a href="#noved">Novedades / Lanzamientos</a>
+            <a href="#recomen">Más Vendidos / Recomendados</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#test">Test de Fragancias</a>
+
+        </nav>
+
+    </header>
+
+    <aside>
+        <header>
+        <h6>prototipo_1 😎</h6>
+        </header>
+
+        <p>Avance del la pagina de la perfumeria de <strong>CDE y PA</strong>.</p> 
+
+    </aside>
+
+<main>
+
+    <p>Un perfume para cada personalida, ¡Encuentra el tuyo y marca la diferencia!</p>
+
+    <section>
+        <article>
+
+            <header> <!--id debe ser igual al href-->
+            <h3 id="catálogo">Catálogo de Perfumes</h3>
+            </header>
+
+            <ol>
+                <li> Versace - Eros</li>
+                <li> Versace - Eros Flame</li>
+                <li> C. Herrera - 212 VIP</li>
+                <li> Paco Rabanne - One Million</li>
+            </ol>
+
+        </article>
+
+    </section>
+
+    <section>
+
+        <header>
+        <h4 id="oferpromos">Ofertas y Promociones</h4>
+        </header>
+
+        <h4>Ofertas</h4>
+
+        <p>En los siguientes perfumes podras encontrar un descuento de -%</p>
+        
+        <ul>
+          <li>HUGO BOSS - HUGO BOSS</li>
+          <li>Pacco Rabanne - Phantom</li>
+          <li>CHANEL - COCO</li>
+          <li>VICTORIA SECRET - Dark kiss</li>
+        </ul>
+
+        <h4>Promociones</h4>
+
+        <p>Compra y recibe un regalo</P>
+
+        <p>Compra dos perfumes de 100ml y llévate un atomizador de bolsillo</p>
+
+    </section>
+
+    <section>
+
+        <header>
+        <h4 id="noved">Novedades / Lanzamientos</h4>
+        </header>
+
+        <p>Nuevos lanzamientos en <strong>Perfumes Arabes</strong></p>
+
+    </section>
+
+    <section>
+
+        <article>
+
+            <header>
+            <h4 id="recomen">Más Vendidos / Recomendados</h4>
+            </header>
+
+            <p>Los perfumes más vendidos y los que recomendamos mucho son los siguientes:</p>
+
+            <ol>
+                <li> Versace - Eros</li>
+                <li> Versace - Eros Flame</li>
+                <li> C. Herrera - 212 VIP CLUB</li>
+                <li> C. Herrera - Good Girl</li>
+            </ol>
+
+        </article>
+
+    </section>
+
+</main>
+
+    <aside>
+        <section>
+            
+            <header>
+            <h4 id="contacto">Contacto y Atención al Cliente</h4>
+            </header>
+
+            
+            <a href="Images/1_imagenIA_perfu.jpg">
+            <img 
+                width="250"
+                height="250"
+                title="IA imagen perfumes" 
+                src="Images/1_imagenIA_perfu.jpg" 
+                alt="La utilizacion de IA para crear los perfumes y un buen fondo"
+            >
+            </a>
+            
+            <!--El div ayuda al salto de linea-->
+            <div>
+            <!--Para llamadas o correos al interno-->
+            <a href="mailto:matheo.cordoba@cun.edu.co">Enviame un correo</a>
+            <a href="tel:+573759342048">Llamame al telefono</a>
+
+            <!--Para que escriban por wasa sin problemas-->
+            <a href="https://wa.me/573759342048?text=Hola%20quiero%20información" 
+            target="_blank" 
+            rel="noreferrer"
+            >Escríbeme por WhatsApp</a>
+            </div>
+
+        </section>
+
+        <section>
+
+            <header>
+            <h5>Carrito de Compras y Checkout</h5>
+            </header>
+
+
+            <!--Link para ir al carrito de compras-->
+            <nav>
+                
+                <!--Tambien se puede hacer navegacion con links externos-->
+                <!--Lo que se hace aca es ir al link creando una pagina nueva sin eliminarla-->
+                <!--target = pagina de explorador, _blank = nueva -->
+                <!--noreferrer se refiere a un problema de seguridad haciendo que no se muestre informacion de la pagina por la que se vino-->
+                <a 
+
+                href="carritocompras.html"
+                target="_blank"
+                
+                rel="noreferrer"
+
+                >Carrito Compras</a>
+            
+            </nav>
+
+
+        </section>
+
+        <section>
+
+            <header>
+            <h5 >Blog de Fragancias</h5>
+            </header>
+
+            <link>
+
+        </section>
+
+    </aside>
+
+    <section>
+
+        <header>
+        <h3 id="test">Test de Fragancias</h3>
+        </header>
+
+        <!--Formulario-->
+        <section>
+            
+            <h4>Formulario</h4>
+
+            <form action="" method="post" action="/">
+                <fieldset>
+                    <legend>Información Personal</legend>
+
+                    <!--for sirve para cuando den click en Nombre lleguen al label-->
+                    <!--placeholder es el escrito gris que da como pista que se debe hacer-->
+
+                    <div><!--Forma 1 para saltos de linea con div-->
+
+                        <!--Hay dos formas para hacer los label de formularios-->
+                        
+                        <!--Forma 1-->
+                        <label for="name">Nombre:</label>
+                        <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        placeholder="Escribe tu nombre aquí"
+                        required
+                        >
+
+                    </div>
+
+                    <!--Forma 2-->
+                    <label style="display: block;">Numero<!--Forma 2 para saltos de linea con style la mejor opcion-->
+                        
+                        <input type="tel"
+                        name="telefono"
+                        placeholder="Escribe tu numero aqui"
+                        required pattern
+                        title="Debe tener 10 dígitos numéricos"
+                        >
+
+                    </label>
+
+                    <br><!--Forma 3 para salto de linea con br-->
+
+                    <label for="fecha">Coloca la fecha:</label>
+                    <input 
+                    type="datetime-local" 
+                    id="fecha" 
+                    name="fecha"
+                    required
+                    >
+
+                </fieldset>
+                <fieldset>
+                    <legend>Información Adicional</legend>
+
+                    <label>Correo<!--Forma 2 para saltos de linea con style la mejor opcion-->
+                        
+                        <input type="email"
+                        name="email"
+                        placeholder="Escribe tu correo aqui"
+                        >
+
+                    </label>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Otros</legend>
+
+                    <label for="porque">¿Porque quieres contactarnos?</label>
+                    <select name="porque" id="porque">
+                        <option value="1">Mas informacion</option>
+                        <option value="2">Dudas</option>
+                        <option value="3">Problemas</option>
+                    </select>
+
+                    <br>
+
+                    <label for="terminos">¿Aceptas los terminos?</label>
+                    <input 
+                    type="checkbox" 
+                    id="terminos" 
+                    name="terminos" 
+                    required
+                    >
+
+                    <br>
+
+                    <datalist id="vendedores">
+                        <option value="Felipe"></option>
+                        <option value="Alexandra"></option>
+                        <option value="Miguel"></option>
+                        <option value="Alex"></option>
+                    </datalist>
+                    <label>
+                        ¿Quien te menciono de la empresa?
+                        <input list="vendedores" name="vendedores">
+                    </label>
+
+                </fieldset>
+
+                <br>
+
+                <input type="submit" value="Enviar contacto">
+            </form>
+
+        </section>        
+
+    </section>
+
+    <!--El footer es la parte de abajo de la pagina-->
+    <footer>
+
+        <!--Se le coloco el copy-->
+        <p>&copy; <span id="year"></span> Mi Sitio Web. Todos los derechos reservados.</p>
+
+        <!--Esto actualizará el año automáticamente -->
+        <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+
+    </footer>
+
+
+</body>
+
+</html>
