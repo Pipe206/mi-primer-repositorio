@@ -1,43 +1,45 @@
 <!DOCTYPE html>
 <html>
-	<head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width = device - width" />
+    <title>Essentia Perfumeria</title>
 
-		<meta charset="utf-8"> 
-		<meta name="viewport" content="width = device - width"> 
-		<title>Essentia Perfumeria</title> 
+    <meta
+      name="description"
+      content="Carrito de compras de la perfumeria Essentia"
+    />
 
-		<meta name="description" content="Carrito de compras de la perfumeria Essentia">
-		
-		<meta name="robots" content="noindex, follow"> 
-		<meta name="theme-color" content="#FF0000">
+    <meta name="robots" content="noindex, follow" />
+    <meta name="theme-color" content="#FF0000" />
 
-		<link rel="icon" type="image/jpg" href="/Images/carritocompras.png">
+    <link rel="icon" type="image/jpg" href="/Images/carritocompras.png" />
 
+    <style>
+      body {
+        background: #ec476b;
+      }
+    </style>
+  </head>
 
-		<style>
-		
-            body {
-            background: #ec476b;
-            }
+  <body>
+    <header>
+      <h1>Carrito de Compras 🤑</h1>
+    </header>
 
-		</style>
+    <main></main>
 
-	</head>
+    <footer>
+      <!--Se le coloco el copy-->
+      <p>
+        &copy; <span id="year"></span>
+        <small>Sitio Web. Todos los derechos reservados.</small>
+      </p>
 
-	<body>
-    
-        <header>
-            <h1>Carrito de Compras 🤑</h1>
-        </header>
-    
-        <h6>Prototipo_1</h6>
-<main>
-			
-</main>
-    
-        <footer>
-            <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
-		</footer>
-    
-	</body>
+      <!--Esto actualizará el año automáticamente -->
+      <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
+    </footer>
+  </body>
 </html>

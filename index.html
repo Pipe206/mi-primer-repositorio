@@ -1,409 +1,617 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <!--La descripcion que puede aparecer en los resultados del navegador abajo del tittle-->
+    <meta
+      name="description"
+      content="La idea de negocio “Essentia” es una perfumería complementada
+        con una app que contiene un innovador software que utiliza la decisión 
+        del usuario para encontrar fragancias ideales"
+    />
 
-    <head>
+    <meta charset="utf-8" />
+    <!--Codificacion-->
+    <!-- Para no tener problema com puntuacion y emojis-->
+    <meta name="viewport" content="width=device-width" />
+    <!--Adaptacion a distintos tipos de pantalla-->
+    <title>Essentia</title>
+    <!--Titulo que aparece en Internet y en la pestaña-->
 
-        <!--La descripcion que puede aparecer en los resultados del navegador abajo del tittle-->
-        <meta name="description" content="La idea de negocio “Essentia” es una perfumería complementada
-        con una app que contiene un innovador software que utiliza la decisión del usuario para encontrar fragancias ideales">
+    <meta name="robots" content="noindex, follow" />
+    <!--Muestra esta pagina en resultados y si hay links pueden ser vistos-->
+    <meta name="theme-color" content="#FF0000" />
+    <!--Colocar color en la parte de arriba del navegador-->
 
-        
-        <meta charset="utf-8"> <!--Codificacion--> <!-- Para no tener problema com puntuacion y emojis-->
-        <meta name="viewport" content="width=device-width"> <!--Adaptacion a distintos tipos de pantalla-->
-        <title>Essentia Perfumeria</title> <!--Titulo que aparece en Internet-->
+    <link
+      rel="icon"
+      type="image/jpg"
+      href="Images/gatos tittle perfumeria.jpg"
+    />
+    <!--Coloca un icono al lado del tittle-->
 
-        <meta name="robots" content="noindex, follow"> <!--Muestra esta pagina en resultados y si hay links pueden ser vistos-->
-        <meta name="theme-color" content="#FF0000"> <!--Colocar color en la parte de arriba del navegador-->
+    <!-- open graph -->
+    <meta property="og:title" content="Essentia perfumeria innovadora" />
 
-        <link rel="icon" type="image/jpg" href="/Images/gatos tittle perfumeria.jpg"> <!--Coloca un icono al lado del tittle-->
+    <meta
+      property="og:description"
+      content="Perfumeria que con IA desifra tu esencia y tu magia"
+    />
 
+    <meta property="og:image" content="Images/1_imagenIA_perfu.jpg" />
 
-        <!--Para estilar hay un elemento HTML ya da uno que es <style> -->
-        <style>
-            h1{           
-                color:rgb(111, 0, 255);        /*Declaracion*/
-                border-width: 3px;
-                border-style: solid;
-                border-color: rgb(187, 0, 255);
-            
-            }
+    <meta
+      property="og:image:alt"
+      content="Imagen donde se menciona que la perfumeria da perfumes masculinos, femeninos y unisex"
+    />
 
-            body {
-                background: #2D6FE3;
-                font-family: system-ui, -apple-system, 
-                BlinkMacSystemFont, 'Segoe UI', Roboto, 
-                Oxygen, Ubuntu, Cantarell, 'Open Sans',
-                'Helvetica Neue', sans-serif;
+    <link rel="alternate" href="https://Essentia.com/en" hreflang="es-MX" />
+    <link rel="canonical" href="https://Essentia.com" />
 
-            }
+    <!-- Para estilar hay un elemento HTML ya da uno que es <style> -->
 
-            .link{
-                color: rgb(235, 57, 57)
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-            }
-            /*hover es cuando el puntero este arriba del mismo*/
-            .link:hover{
-                color: rgb(197, 26, 26)
+  <body>
+    <header>
+      <h1>
+        <strong> ESSENTIA</strong>
+      </h1>
 
-            }
+      <p>
+        <strong>
+          Un perfume para cada personalidad ¡Encuentra el tuyo y marca la
+          diferencia!
+        </strong>
+      </p>
 
-            input:focus{
-                border: 5px  solid rgb(255, 0, 0);
+      <!--El loading ayuda a que la pagina la cargue de manera lenta o cuando la necesite-->
 
-            }
+      <div style="display: flex; gap: 20px">
+        <a href="Images/Imagen 1 perfumes.jpeg">
+          <img
+            width="250"
+            height="250"
+            title="1 imagen perfumes"
+            src="Images/Imagen 1 perfumes.jpeg"
+            alt="Primer imagen de promocion de envases y perfumes de la empresa"
+          />
+        </a>
 
-            #formulario{
-                color: rgb(0, 200, 255);
+        <a href="Images/Imagen 2 perfumes.jpeg">
+          <img
+            width="250"
+            height="250"
+            title="IA imagen perfumes"
+            src="Images/Imagen 2 perfumes.jpeg"
+            alt="Segunda imagen de promocion de envases y perfumes de la empresa"
+          />
+        </a>
+      </div>
 
-            }
+      <!--Sirve para guiar al usuario al tema que desea en vez de bajar hasta el tema-->
+      <!--href = el destino del enlace, y lo de afuera es lo que aparece en la pagina-->
+      <nav>
+        <!--Los navs son mas que todo para la navegacion interna de la pagina-->
+        <div style="display: flex; gap: 10px">
+          <a class="link" href="#catálogo">Explora Nuestro Catálogo Completo</a>
 
-            p + span{
-                color: blue;
+          <a class="link" href="#oferpromos">Descubre Descuentos Imperdibles</a>
 
-            }
+          <a class="link" href="#noved">Ver lo Más Nuevo</a>
 
-        </style>
+          <a class="link" href="#contacto">Contáctanos Ahora</a>
 
-    </head>
+          <a class="link" href="#test">Encuentra tu Match Aromático</a>
+        </div>
 
-    <body>
-        <header>
+        <div style="display: flex; gap: 10px">
+          <a class="link" href="#carrito">Revisa tus Perfumes Seleccionados</a>
 
-            <h1>Perfumeria 🤑</h1>
+          <a class="link" href="#blog">Tips, Guías y Secretos</a>
 
-            <!--Sirve para guiar al usuario al tema que desea en vez de bajar hasta el tema-->
-            <!--href = el destino del enlace, y lo de afuera es lo que aparece en la pagina-->
-            <nav>
-                <!--Los navs son mas que todo para la navegacion interna de la pagina-->
-                <a class=link href="#catálogo">Catálogo de Perfumes</a>
-                <a class=link href="#oferpromos">Ofertas y Promociones</a>
-                <a class=link href="#noved">Novedades / Lanzamientos</a>
-                <a class=link href="#recomen">Más Vendidos / Recomendados</a>
-                <a class=link href="#contacto">Contacto</a>
-                <a class=link href="#test">Test de Fragancias</a>
-
-            </nav>
-
-        </header>
-
-        <aside>
-            <header>
-            <h6>prototipo_1 😎</h6>
-            </header>
-
-            <p>Avance del la pagina de la perfumeria de <strong>CDE y PA</strong>.</p> 
-
-        </aside>
+          <a class="link" href="#formulario">Envíanos tu Mensaje</a>
+        </div>
+      </nav>
+    </header>
 
     <main>
-
-        <p>Un perfume para cada personalida, ¡Encuentra el tuyo y marca la diferencia!</p>
-
-        <section>
-            <article>
-
-                <header> <!--id debe ser igual al href-->
-                <h3 id="catálogo">Catálogo de Perfumes</h3>
-                </header>
-
-                <ol>
-                    <li> Versace - Eros</li>
-                    <li> Versace - Eros Flame</li>
-                    <li> C. Herrera - 212 VIP</li>
-                    <li> Paco Rabanne - One Million</li>
-                </ol>
-
-            </article>
-
-        </section>
-
-        <section>
-
-            <header>
-            <h4 id="oferpromos">Ofertas y Promociones</h4>
-            </header>
-
-            <h4>Ofertas</h4>
-
-            <p>En los siguientes perfumes podras encontrar un descuento de -%</p>
-            
-            <ul>
-            <li>HUGO BOSS - HUGO BOSS</li>
-            <li>Pacco Rabanne - Phantom</li>
-            <li>CHANEL - COCO</li>
-            <li>VICTORIA SECRET - Dark kiss</li>
-            </ul>
-
-            <h4>Promociones</h4>
-
-            <p>Compra y recibe un regalo</P>
-
-            <p>Compra dos perfumes de 100ml y llévate un atomizador de bolsillo</p>
-
-        </section>
-
-        <section>
-
-            <header>
-            <h4 id="noved">Novedades / Lanzamientos</h4>
-            </header>
-
-            <p>Nuevos lanzamientos en <strong>Perfumes Arabes</strong></p>
-
-        </section>
-
-        <section>
-
-            <article>
-
-                <header>
-                <h4 id="recomen">Más Vendidos / Recomendados</h4>
-                </header>
-
-                <p>Los perfumes más vendidos y los que recomendamos mucho son los siguientes:</p>
-
-                <ol>
-                    <li> Versace - Eros</li>
-                    <li> Versace - Eros Flame</li>
-                    <li> C. Herrera - 212 VIP CLUB</li>
-                    <li> C. Herrera - Good Girl</li>
-                </ol>
-
-            </article>
-
-        </section>
-
-        <section>
-
-            <header>
-                <h4>Preguntas frecuentes</h4>
-            </header>
-            <details>
-
-                <summary>¿Que tipo de perfumes?</summary>
-                <p>Estos perfumes pueden venir en varias presentaciones de <strong>30ml, 50ml o 100ml</strong>,
-                    ademas si deseas se puede elegir el color del frasco, tambien son replicas, a pesar de que nosotros vendamos replicas
-                    no significa que sean malas, nosotros estamos a cargo de que todos los perfumes duren, huelan aun mas
-                    y sean llamativos.
-                </p>
-
-            </details>
-            <details>
-
-                <summary>¿Tiene todo tipo de perfumes?</summary>
-                <p>Los perfumes que vendemos en la empresa estan en el catalogo o en su defecto en los PDFs
-                    entregados por los vendedores, si no llega haber el perfume que deseas puedes contartarte con nosotros
-                    para la verificacion interna.
-                </p>
-
-            </details>
-
-        </section>
-
-    </main>
-
-        <aside>
-            <section>
-                
-                <header>
-                <h4 id="contacto">Contacto y Atención al Cliente</h4>
-                </header>
-
-                
-                <a href="Images/1_imagenIA_perfu.jpg">
-                <img 
-                    width="250"
-                    height="250"
-                    title="IA imagen perfumes" 
-                    src="Images/1_imagenIA_perfu.jpg" 
-                    alt="La utilizacion de IA para crear los perfumes y un buen fondo"
-                >
-                </a>
-                
-                <!--El div ayuda al salto de linea-->
-                <div>
-                <!--Para llamadas o correos al interno-->
-                <a href="mailto:matheo.cordoba@cun.edu.co">Enviame un correo</a>
-                <a href="tel:+573759342048">Llamame al telefono</a>
-
-                <!--Para que escriban por wasa sin problemas-->
-                <a href="https://wa.me/573759342048?text=Hola%20quiero%20información" 
-                target="_blank" 
-                rel="noreferrer"
-                >Escríbeme por WhatsApp</a>
-                </div>
-
-            </section>
-
-            <section>
-
-                <header>
-                <h5>Carrito de Compras y Checkout</h5>
-                </header>
-
-
-                <!--Link para ir al carrito de compras-->
-                <nav>
-                    
-                    <!--Tambien se puede hacer navegacion con links externos-->
-                    <!--Lo que se hace aca es ir al link creando una pagina nueva sin eliminarla-->
-                    <!--target = pagina de explorador, _blank = nueva -->
-                    <!--noreferrer se refiere a un problema de seguridad haciendo que no se muestre informacion de la pagina por la que se vino-->
-                    <a 
-
-                    href="carritocompras.html"
-                    target="_blank"
-                    
-                    rel="noreferrer"
-
-                    >Carrito Compras</a>
-                
-                </nav>
-
-
-            </section>
-
-            <section>
-
-                <header>
-                <h5 >Blog de Fragancias</h5>
-                </header>
-
-                <link>
-
-            </section>
-
-        </aside>
-
-        <section>
-
-            <header>
-            <h3 id="test">Test de Fragancias</h3>
-            </header>
-
-            <!--Formulario-->
-            <section>
-                
-                <h4 id="formulario">Formulario</h4>
-
-                <form method="post" action="/">
-                    <fieldset>
-                        <legend id="formulario">Información Personal</legend>
-
-                        <!--for sirve para cuando den click en Nombre lleguen al label-->
-                        <!--placeholder es el escrito gris que da como pista que se debe hacer-->
-
-                        <div><!--Forma 1 para saltos de linea con div-->
-
-                            <!--Hay 3 formas para hacer los label de formularios-->
-                            
-                            <!--Forma 1-->
-                            <label for="name">Nombre:</label>
-                            <input 
-                            type="text" 
-                            id="name" 
-                            name="name" 
-                            placeholder="Escribe tu nombre aquí"
-                            required
-                            >
-
-                        </div>
-
-                        <!--Forma 2-->
-                        <label style="display: block;">Numero<!--Forma 2 para saltos de linea con style la mejor opcion-->
-                            
-                            <input type="tel"
-                            name="telefono"
-                            placeholder="Escribe tu numero aqui"
-                            required pattern
-                            title="Debe tener 10 dígitos numéricos"
-                            >
-
-                        </label>
-
-                        <br><!--Forma 3 para salto de linea con br-->
-
-                        <label for="fecha">Coloca la fecha:</label>
-                        <input 
-                        type="datetime-local" 
-                        id="fecha" 
-                        name="fecha"
-                        required
-                        >
-
-                    </fieldset>
-                    <fieldset>
-                        <legend id="formulario">Información Adicional</legend>
-
-                        <label>Correo<!--Forma 2 para saltos de linea con style la mejor opcion-->
-                            
-                            <input type="email"
-                            name="email"
-                            placeholder="Escribe tu correo aqui"
-                            >
-
-                        </label>
-
-                    </fieldset>
-
-                    <fieldset>
-                        <legend id="formulario">Otros</legend>
-
-                        <label for="porque">¿Porque quieres contactarnos?</label>
-                        <select name="porque" id="porque">
-                            <option value="1">Mas informacion</option>
-                            <option value="2">Dudas</option>
-                            <option value="3">Problemas</option>
-                        </select>
-
-                        <br>
-
-                        <label for="terminos">¿Aceptas los terminos?</label>
-                        <input 
-                        type="checkbox" 
-                        id="terminos" 
-                        name="terminos" 
-                        required
-                        >
-
-                        <br>
-
-                        <datalist id="vendedores">
-                            <option value="Felipe"></option>
-                            <option value="Alexandra"></option>
-                            <option value="Miguel"></option>
-                            <option value="Alex"></option>
-                        </datalist>
-                        <label>
-                            ¿Quien te menciono de la empresa?
-                            <input list="vendedores" name="vendedores">
-                        </label>
-
-                    </fieldset>
-
-                    <br>
-
-                    <input type="submit" value="Enviar contacto">
-                </form>
-
-            </section>        
-
-        </section>
-
-        <!--El footer es la parte de abajo de la pagina-->
-        <footer>
-
-            <!--Se le coloco el copy-->
-            <p>&copy; <span id="year"></span> Mi Sitio Web. Todos los derechos reservados.</p>
-
-            <!--Esto actualizará el año automáticamente -->
+      <section>
+        <article>
+          <header>
+            <!--id debe ser igual al href-->
+            <h3 id="catálogo">Catálogo de Perfumes</h3>
+          </header>
+
+          <p>
+            Una selección personalizada de fragancias que realzan tu estilo y
+            personalidad.
+          </p>
+
+          <dialog id="cata">
+            <h2>Aca podras observar todo nuestro catálogo</h2>
+
+            <!--PDF DE PEWRFUMES-->
+
+            <div class="container">
+              <div class="controls">
+                <button class="butcat" id="prev-page" disabled>
+                  ◀ Anterior
+                </button>
+                <span class="page-info">
+                  Página: <span id="page-num">-</span> /
+                  <span id="page-count">-</span>
+                </span>
+                <button class="butcat" id="next-page" disabled>
+                  Siguiente ▶
+                </button>
+                <button class="butcat" id="zoom-in">Zoom +</button>
+                <button class="butcat" id="zoom-out">Zoom -</button>
+              </div>
+
+              <div id="loading" class="loading" style="display: none">
+                Cargando PDF...
+              </div>
+
+              <canvas id="pdf-canvas"></canvas>
+            </div>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
             <script>
-            document.getElementById("year").textContent = new Date().getFullYear();
+              pdfjsLib.GlobalWorkerOptions.workerSrc =
+                "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+
+              let pdfDoc = null;
+              let pageNum = 1;
+              let pageRendering = false;
+              let pageNumPending = null;
+              let scale = 1.5;
+
+              const canvas = document.getElementById("pdf-canvas");
+              const ctx = canvas.getContext("2d");
+              const fileInput = document.getElementById("file-input");
+              const loading = document.getElementById("loading");
+
+              // Renderizar página
+              function renderPage(num) {
+                pageRendering = true;
+                loading.style.display = "block";
+
+                pdfDoc.getPage(num).then((page) => {
+                  const viewport = page.getViewport({ scale: scale });
+                  canvas.height = viewport.height;
+                  canvas.width = viewport.width;
+
+                  const renderContext = {
+                    canvasContext: ctx,
+                    viewport: viewport,
+                  };
+
+                  const renderTask = page.render(renderContext);
+
+                  renderTask.promise.then(() => {
+                    pageRendering = false;
+                    loading.style.display = "none";
+
+                    if (pageNumPending !== null) {
+                      renderPage(pageNumPending);
+                      pageNumPending = null;
+                    }
+                  });
+                });
+
+                document.getElementById("page-num").textContent = num;
+              }
+
+              // Solicitar renderizado de página
+              function queueRenderPage(num) {
+                if (pageRendering) {
+                  pageNumPending = num;
+                } else {
+                  renderPage(num);
+                }
+              }
+
+              // Página anterior
+              document
+                .getElementById("prev-page")
+                .addEventListener("click", () => {
+                  if (pageNum <= 1) return;
+                  pageNum--;
+                  queueRenderPage(pageNum);
+                  updateButtons();
+                });
+
+              // Página siguiente
+              document
+                .getElementById("next-page")
+                .addEventListener("click", () => {
+                  if (pageNum >= pdfDoc.numPages) return;
+                  pageNum++;
+                  queueRenderPage(pageNum);
+                  updateButtons();
+                });
+
+              // Zoom
+              document
+                .getElementById("zoom-in")
+                .addEventListener("click", () => {
+                  scale += 0.25;
+                  queueRenderPage(pageNum);
+                });
+
+              document
+                .getElementById("zoom-out")
+                .addEventListener("click", () => {
+                  if (scale <= 0.5) return;
+                  scale -= 0.25;
+                  queueRenderPage(pageNum);
+                });
+
+              // Actualizar botones
+              function updateButtons() {
+                document.getElementById("prev-page").disabled = pageNum <= 1;
+                document.getElementById("next-page").disabled =
+                  pageNum >= pdfDoc.numPages;
+              }
+
+              // CAMBIA esta ruta url por la de tu archivo PDF
+
+              const url = "PDF/PLEGABLE DE PERFUMERIA 2022.pdf"; // Ajusta esta ruta según tu estructura
+
+              console.log("Intentando cargar PDF desde:", url);
+              loading.style.display = "block";
+              loading.textContent = "Cargando PDF desde: " + url;
+
+              pdfjsLib
+                .getDocument(url)
+                .promise.then((pdf) => {
+                  console.log(
+                    "PDF cargado exitosamente. Páginas:",
+                    pdf.numPages
+                  );
+                  pdfDoc = pdf;
+                  document.getElementById("page-count").textContent =
+                    pdf.numPages;
+                  pageNum = 1;
+                  renderPage(pageNum);
+                  updateButtons();
+                })
+                .catch((err) => {
+                  loading.style.display = "block";
+                  loading.style.color = "red";
+                  loading.innerHTML = `
+                <strong>Error al cargar el PDF:</strong><br>
+                ${err.message}<br><br>
+                <strong>Ruta intentada:</strong> ${url}<br><br>
+                Verifica:<br>
+                1. Que el archivo existe en esa ubicación<br>
+                2. Que estás usando Live Server (no file://)<br>
+                3. Que el nombre del archivo es correcto (mayúsculas/minúsculas)
+            `;
+                  console.error("Error completo:", err);
+                });
             </script>
 
-        </footer>
+            <button class="butcat" id="cerrar">Cerrar</button>
+          </dialog>
 
+          <button id="ver">Ver nuestro catálogo</button>
 
-    </body>
+          <script>
+            window.ver.addEventListener("click", () => {
+              window.cata.showModal();
+            });
 
+            window.cerrar.addEventListener("click", () => {
+              window.cata.close();
+            });
+          </script>
+
+          <!--
+          ! Sección de "Más Vendidos / Recomendados": Conviértelo en una galería
+          ! de imágenes de los perfumes con una breve descripción o "por qué son
+          ! los favoritos".
+          -->
+
+          <p>
+            Los perfumes más vendidos y los que recomendamos mucho son los
+            siguientes:
+          </p>
+
+          <ol>
+            <li>Versace - Eros</li>
+            <li>Versace - Eros Flame</li>
+            <li>C. Herrera - 212 VIP CLUB</li>
+            <li>C. Herrera - Good Girl</li>
+          </ol>
+        </article>
+      </section>
+
+      <section>
+        <header>
+          <h4 id="oferpromos">Ofertas y Promociones</h4>
+        </header>
+
+        <!--
+        !	Sección de "Ofertas y Promociones": 
+        ! Actualmente es solo una lista. Conviértelo en algo visual y atractivo.
+        ! En lugar de una lista de nombres, muestra imágenes de los perfumes
+        ! en oferta con su precio original y el precio de descuento.
+        -->
+
+        <h4 class="ti4">Ofertas</h4>
+
+        <p>En los siguientes perfumes podras encontrar un descuento de -%</p>
+
+        <ul>
+          <li>HUGO BOSS - HUGO BOSS</li>
+          <li>Pacco Rabanne - Phantom</li>
+          <li>CHANEL - COCO</li>
+          <li>VICTORIA SECRET - Dark kiss</li>
+        </ul>
+
+        <h4 class="ti4">Promociones</h4>
+
+        <p>Compra y recibe un regalo</p>
+
+        <p>Compra dos perfumes de 100ml y llévate un atomizador de bolsillo</p>
+      </section>
+
+      <section>
+        <header>
+          <h4 id="noved">Nuevos Aromas, Nuevas Sensaciones</h4>
+        </header>
+
+        <p>Nuevos lanzamientos en <strong>Perfumes Arabes</strong></p>
+      </section>
+
+      <section>
+        <header>
+          <h4>Preguntas frecuentes</h4>
+        </header>
+        <details open>
+          <summary>¿Por qué un perfume huele diferente o dura poco?</summary>
+          <p>
+            Cada persona tiene un pH, tipo de piel, temperatura corporal y nivel
+            de hidratación distintos. Estos factores cambian cómo las notas del
+            perfume se evaporan y se mezclan con el olor natural de la piel. En
+            pieles secas, por ejemplo, el aroma se desvanece más rápido,
+            mientras que en pieles hidratadas y cálidas suele fijarse mejor y
+            proyectar más.
+          </p>
+        </details>
+        <details>
+          <summary>¿Que tipo de perfumes son?</summary>
+          <p>
+            Estos perfumes pueden venir en varias presentaciones de
+            <strong>30ml, 50ml o 100ml</strong>, ademas si deseas se puede
+            elegir el color del frasco, tambien son replicas, a pesar de que
+            nosotros vendamos replicas no significa que sean malas, nosotros
+            estamos a cargo de que todos los perfumes duren, huelan aun mas y
+            sean llamativos.
+          </p>
+        </details>
+        <details>
+          <summary>¿Tienes todo tipo de perfumes?</summary>
+          <p>
+            Los perfumes que vendemos en la empresa estan en el catalogo o en su
+            defecto en los PDFs entregados por los vendedores, si no llega haber
+            el perfume que deseas puedes contartarte con nosotros para la
+            verificacion interna.
+          </p>
+        </details>
+      </section>
+    </main>
+
+    <aside>
+      <section>
+        <header>
+          <h4 id="contacto">Estamos Aquí para Ayudarte -- Contáctanos</h4>
+        </header>
+
+        <a href="Images/1_imagenIA_perfu.jpg">
+          <img
+            loading="lazy"
+            width="250"
+            height="250"
+            title="IA imagen perfumes"
+            src="Images/1_imagenIA_perfu.jpg"
+            alt="La utilizacion de IA para crear los perfumes y un buen fondo"
+          />
+        </a>
+
+        <!-- El div ayuda al salto de linea-->
+        <!--! Colocar correctamente los datos para que realmente me lleguen-->
+        <div>
+          <!--Para llamadas o correos al interno-->
+          <a class="cont" href="mailto:matheo.cordoba@cun.edu.co"
+            >Enviame un correo</a
+          >
+          <a class="cont" href="tel:+573759342048">Llamame al telefono</a>
+
+          <!--Para que escriban por wasa sin problemas-->
+          <a
+            class="cont"
+            href="https://wa.me/573759342048?text=Hola%20quiero%20información"
+            target="_blank"
+            rel="noreferrer"
+            >Escríbeme por WhatsApp</a
+          >
+        </div>
+      </section>
+
+      <section>
+        <header>
+          <h5 id="carrito">Listo para Comprar — Entra Aquí</h5>
+        </header>
+
+        <!--Link para ir al carrito de compras-->
+        <nav>
+          <!--Tambien se puede hacer navegacion con links externos-->
+          <!--Lo que se hace aca es ir al link creando una pagina nueva sin eliminarla-->
+          <!--target = pagina de explorador, _blank = nueva -->
+          <!--noreferrer se refiere a un problema de seguridad haciendo que no se muestre informacion de la pagina por la que se vino-->
+          <a href="carritocompras.html" target="_blank" rel="noreferrer"
+            >Carrito Compras</a
+          >
+        </nav>
+      </section>
+
+      <section>
+        <header>
+          <h5 id="blog">Sumérgete en el Universo de las Fragancias</h5>
+        </header>
+
+        <link />
+      </section>
+    </aside>
+
+    <section>
+      <header>
+        <h3 id="test">Haz el Test y Encuentra tu Perfume Perfecto</h3>
+      </header>
+
+      <!--Formulario-->
+      <section>
+        <h4 id="formulario">Déjanos tus Datos y Te Contactamos</h4>
+
+        <!--! Necesito en el action="/" la url o la base donde va a llegar toda la informacion del formulario-->
+
+        <h4>Formulario</h4>
+
+        <!--Post es para que no aparezca informacion en la url aunque en los casos no dan seguridad con la info-->
+
+        <form method="post" action="/">
+          <fieldset>
+            <legend id="formulario">Información Personal</legend>
+
+            <!--placeholder es el escrito gris que da como pista que se debe hacer-->
+
+            <div>
+              <!--Forma 1 para saltos de linea con div-->
+
+              <!--Hay 3 formas para hacer los label de formularios-->
+
+              <!--Forma 1-->
+              <!--for sirve para cuando den click en Nombre lleguen al label-->
+
+              <label for="name">Nombre:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Escribe tu nombre aquí"
+                required
+              />
+            </div>
+            <!--Forma 2-->
+
+            <!--Forma 2 para label con style la mejor opcion-->
+            <!--Cualquier input que esté dentro del label automáticamente queda asociado.-->
+
+            <label style="display: block"
+              >Numero
+
+              <input
+                type="tel"
+                name="Numero"
+                placeholder="Escribe tu numero aqui"
+                required
+                pattern
+                title="Debe tener 10 dígitos numéricos"
+              />
+            </label>
+
+            <br /><!--Forma 3 para salto de linea con br-->
+
+            <label for="fecha">Coloca la fecha:</label>
+            <input type="datetime-local" id="fecha" name="fecha" required />
+          </fieldset>
+
+          <fieldset>
+            <legend id="formulario">Información Adicional</legend>
+
+            <label
+              >Correo
+              <!--Forma 2 para saltos de linea con style la mejor opcion-->
+
+              <input
+                type="email"
+                name="email"
+                placeholder="Escribe tu correo aqui"
+              />
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend id="formulario">Otros</legend>
+
+            <!--for y id deben ser iguales para identificarlos mejor-->
+            <!--name es el valor el cual se busca en el backend-->
+            <label for="porque">¿Porque quieres contactarnos?</label>
+            <select name="porque" id="porque">
+              <option value="1">Mas informacion</option>
+              <option value="2">Dudas</option>
+              <option value="3">Problemas</option>
+            </select>
+
+            <br />
+
+            <label for="terminos">¿Aceptas los terminos?</label>
+            <input type="checkbox" id="terminos" name="terminos" required />
+
+            <br />
+
+            <!--El label puede ir antes o despues del datalist 
+            no pasa nada ya que tiene el id-->
+            <label>
+              ¿Quien te menciono de la empresa?
+              <input list="vendedores" name="vendedores" />
+            </label>
+
+            <datalist id="vendedores">
+              <option value="Felipe"></option>
+              <option value="Alexandra"></option>
+              <option value="Miguel"></option>
+              <option value="Alex"></option>
+            </datalist>
+
+            <label>
+              ¿Tienes algun comentario?
+              <br />
+              <textarea
+                cols="30"
+                rows="5"
+                name="comen"
+                placeholder="ingresa tu comentario"
+              ></textarea>
+            </label>
+          </fieldset>
+
+          <!--Se podria colocar un input con el atributo submit 
+          pero por lo que es un formulario no es necesario utilizarlo
+          ya que un button dentro de un formulario "form" ya acepta la configuracion
+          ademas pasa lo mismo con el atributo-->
+          <br />
+
+          <button>Enviar contacto</button>
+        </form>
+      </section>
+    </section>
+
+    <!--El footer es la parte de abajo de la pagina-->
+    <footer>
+      <!--Se le coloco el copy-->
+      <p>
+        &copy; <span id="year"></span>
+        <small>Sitio Web. Todos los derechos reservados.</small>
+      </p>
+
+      <!--Esto actualizará el año automáticamente -->
+      <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
+    </footer>
+  </body>
 </html>
