@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <!--La descripcion que puede aparecer en los resultados del navegador abajo del tittle-->
@@ -67,6 +67,8 @@
 
       <!--El loading ayuda a que la pagina la cargue de manera lenta o cuando la necesite-->
 
+      <!--! modificar las imagenes para que sea legible y bien desarrollada-->
+
       <div style="display: flex; gap: 20px">
         <a href="Images/Imagen 1 perfumes.jpeg">
           <img
@@ -77,6 +79,8 @@
             alt="Primer imagen de promocion de envases y perfumes de la empresa"
           />
         </a>
+
+        <!--! modificar las imagenes para que sea legible y bien desarrollada-->
 
         <a href="Images/Imagen 2 perfumes.jpeg">
           <img
@@ -123,13 +127,17 @@
             <h3 id="catálogo">Catálogo de Perfumes</h3>
           </header>
 
+          <br />
+
           <p>
             Una selección personalizada de fragancias que realzan tu estilo y
             personalidad.
           </p>
 
           <dialog id="cata">
-            <h2>Aca podras observar todo nuestro catálogo</h2>
+            <header>
+              <h2>Aca podras observar todo nuestro catálogo</h2>
+            </header>
 
             <!--PDF DE PEWRFUMES-->
 
@@ -268,7 +276,7 @@
                 .promise.then((pdf) => {
                   console.log(
                     "PDF cargado exitosamente. Páginas:",
-                    pdf.numPages
+                    pdf.numPages,
                   );
                   pdfDoc = pdf;
                   document.getElementById("page-count").textContent =
@@ -353,9 +361,12 @@
 
         <h4 class="ti4">Promociones</h4>
 
-        <p>Compra y recibe un regalo</p>
-
-        <p>Compra dos perfumes de 100ml y llévate un atomizador de bolsillo</p>
+        <ul>
+          <li>Compra y recibe un regalo</li>
+          <li>
+            Compra dos perfumes de 100ml y llévate un atomizador de bolsillo
+          </li>
+        </ul>
       </section>
 
       <section>
@@ -363,7 +374,35 @@
           <h4 id="noved">Nuevos Aromas, Nuevas Sensaciones</h4>
         </header>
 
-        <p>Nuevos lanzamientos en <strong>Perfumes Arabes</strong></p>
+        <h4 class="ti4">Proximos lanzamientos</h4>
+
+        <ul>
+          <li><strong>Perfumes Arabes</strong></li>
+        </ul>
+      </section>
+
+      <section>
+        <article>
+          <header>
+            <h3>Beneficios de nuetra plataforma</h3>
+          </header>
+
+          <br />
+
+          <p>
+            Acá mencionaremos los beneficios por los cuales nuestra pagina web
+            podria ayudar o llegar a mucha gente.
+          </p>
+
+          <ul>
+            <li>Obtén tu experiencia personalizada con nosotros.</li>
+            <li>Mira todo nuestro catalogo y decide entre todos los gustos.</li>
+            <li>
+              Menciona todo lo que quieras que sepamos para una mayor certeza de
+              tu gusto.
+            </li>
+          </ul>
+        </article>
       </section>
 
       <section>
@@ -409,6 +448,8 @@
         <header>
           <h4 id="contacto">Estamos Aquí para Ayudarte -- Contáctanos</h4>
         </header>
+
+        <!--! modificar las imagenes para que sea legible y bien desarrollada-->
 
         <a href="Images/1_imagenIA_perfu.jpg">
           <img
@@ -465,12 +506,12 @@
 
         <link />
       </section>
-    </aside>
 
-    <section>
-      <header>
-        <h3 id="test">Haz el Test y Encuentra tu Perfume Perfecto</h3>
-      </header>
+      <section>
+        <header>
+          <h3 id="test">Haz el Test y Encuentra tu Perfume Perfecto</h3>
+        </header>
+      </section>
 
       <!--Formulario-->
       <section>
@@ -482,7 +523,11 @@
 
         <!--Post es para que no aparezca informacion en la url aunque en los casos no dan seguridad con la info-->
 
-        <form method="post" action="/">
+        <form
+          id="essentia"
+          method="post"
+          action="https://formspree.io/f/mwvngbvv"
+        >
           <fieldset>
             <legend id="formulario">Información Personal</legend>
 
@@ -516,6 +561,7 @@
               <input
                 type="tel"
                 name="Numero"
+                id="number"
                 placeholder="Escribe tu numero aqui"
                 required
                 pattern
@@ -523,7 +569,7 @@
               />
             </label>
 
-            <br /><!--Forma 3 para salto de linea con br-->
+            <!-- <br /> Forma 3 para salto de linea con br-->
 
             <label for="fecha">Coloca la fecha:</label>
             <input type="datetime-local" id="fecha" name="fecha" required />
@@ -539,6 +585,7 @@
               <input
                 type="email"
                 name="email"
+                id="email"
                 placeholder="Escribe tu correo aqui"
               />
             </label>
@@ -551,7 +598,7 @@
             <!--name es el valor el cual se busca en el backend-->
             <label for="porque">¿Porque quieres contactarnos?</label>
             <select name="porque" id="porque">
-              <option value="1">Mas informacion</option>
+              <option value="1">Mas información</option>
               <option value="2">Dudas</option>
               <option value="3">Problemas</option>
             </select>
@@ -564,18 +611,14 @@
             <br />
 
             <!--El label puede ir antes o despues del datalist 
-            no pasa nada ya que tiene el id-->
-            <label>
-              ¿Quien te menciono de la empresa?
-              <input list="vendedores" name="vendedores" />
-            </label>
-
-            <datalist id="vendedores">
-              <option value="Felipe"></option>
-              <option value="Alexandra"></option>
-              <option value="Miguel"></option>
-              <option value="Alex"></option>
-            </datalist>
+          no pasa nada ya que tiene el id-->
+            <label for="vendedor">¿Quien te menciono de la empresa?</label>
+            <select name="vendedor" id="vendedor">
+              <option value="1">Felipe</option>
+              <option value="1">Alexandra</option>
+              <option value="1">Miguel</option>
+              <option value="1">Alex</option>
+            </select>
 
             <label>
               ¿Tienes algun comentario?
@@ -584,21 +627,53 @@
                 cols="30"
                 rows="5"
                 name="comen"
-                placeholder="ingresa tu comentario"
+                id="comen"
+                placeholder="Ingresa tu comentario"
               ></textarea>
             </label>
           </fieldset>
 
           <!--Se podria colocar un input con el atributo submit 
-          pero por lo que es un formulario no es necesario utilizarlo
-          ya que un button dentro de un formulario "form" ya acepta la configuracion
-          ademas pasa lo mismo con el atributo-->
+        pero por lo que es un formulario no es necesario utilizarlo
+        ya que un button dentro de un formulario "form" ya acepta la configuracion
+        ademas pasa lo mismo con el atributo-->
           <br />
 
-          <button>Enviar contacto</button>
+          <!-- Campo trampa anti-spam (invisible para usuarios) -->
+          <input type="text" name="_gotcha" style="display: none" />
+
+          <button>Enviar información</button>
         </form>
+
+        <div class="mensaje-ok" id="confirmacion">
+          ✅ ¡Mensaje enviado correctamente! Te responderemos pronto.
+        </div>
+
+        <script>
+          const form = document.getElementById("essentia");
+          const confirmacion = document.getElementById("confirmacion");
+
+          form.addEventListener("submit", async function (e) {
+            e.preventDefault(); // Evita recargar la página
+
+            const data = new FormData(form);
+
+            const respuesta = await fetch(form.action, {
+              method: "POST",
+              body: data,
+              headers: { Accept: "application/json" },
+            });
+
+            if (respuesta.ok) {
+              form.reset(); // Limpia el formulario
+              confirmacion.style.display = "block"; // Muestra mensaje de éxito
+            } else {
+              alert("Hubo un error al enviar. Inténtalo de nuevo.");
+            }
+          });
+        </script>
       </section>
-    </section>
+    </aside>
 
     <!--El footer es la parte de abajo de la pagina-->
     <footer>
